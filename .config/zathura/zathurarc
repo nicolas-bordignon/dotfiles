@@ -1,0 +1,118 @@
+# zathurarc
+
+# settings
+set adjust-open width
+set window-title-basename true
+set selection-clipboard clipboard
+set first-page-column 1:1
+set synctex true
+set synctex-editor-command "code -g +%{line} %{input}"
+
+
+# key bindings
+map [normal]     <F11> toggle_fullscreen
+map [fullscreen] <F11> toggle_fullscreen
+map [normal]     b toggle_statusbar
+map [fullscreen] b toggle_statusbar
+map [normal]     c set "recolor true"
+map [fullscreen] c set "recolor true"
+map [normal]     x set "recolor false"
+map [fullscreen] x set "recolor false"
+map [normal]     <C-r> reload
+map [fullscreen] <C-r> reload
+
+map [normal]     J scroll down
+map [fullscreen] J scroll down
+map [normal]     <C-j> scroll half-down
+map [fullscreen] <C-j> scroll half-down
+map [normal]     <C-Down> scroll half-down
+map [fullscreen] <C-Down> scroll half-down
+map [normal]     K scroll up
+map [fullscreen] K scroll up
+map [normal]     <C-k> scroll half-up
+map [fullscreen] <C-k> scroll half-up
+map [normal]     <C-Up> scroll half-up
+map [fullscreen] <C-Up> scroll half-up
+
+
+map [normal]     <PageUp>   navigate previous
+map [fullscreen] <PageUp>   navigate previous
+map [normal]     <PageDown> navigate next
+map [fullscreen] <PageDown> navigate next
+
+
+map [normal]     <A-1> set "first-page-column 1:1"
+map [fullscreen] <A-1> set "first-page-column 1:1"
+map [normal]     <A-2> set "first-page-column 1:2"
+map [fullscreen] <A-2> set "first-page-column 1:2"
+
+# Why are these only defined for normal mode by default?
+map [fullscreen] a adjust_window best-fit
+map [fullscreen] s adjust_window width
+map [fullscreen] f follow
+map [fullscreen] d toggle_page_mode 2
+map [fullscreen] <Tab> toggle_index
+map [fullscreen] <C-o> jumplist backward
+map [fullscreen] <C-i> jumplist forward
+
+
+
+# colors
+#set default-bg "#282a36"
+#set default-fg "#f8f8f2"
+#set statusbar-fg "#f8f8f2"
+#set statusbar-bg "#282a36"
+#set inputbar-fg "#6272a4"
+#set inputbar-bg "#282a36"
+#set completion-highlight-fg "#f8f8f2"
+#set completion-highlight-bg "#282a36"
+#set highlight-color "#6272a4"
+#set highlight-active-color "#6272a4"
+#set notification-fg "#ff79c6"
+#set notification-bg "#282a36"
+
+
+set notification-error-bg       "#ff5555" # Red
+set notification-error-fg       "#f8f8f2" # Foreground
+set notification-warning-bg     "#ff5555" # Red
+set notification-warning-fg     "#f8f8f2" # Foreground
+set notification-bg             "#6272a4" # Comment
+set notification-fg             "#f8f8f2" # Foreground
+
+set completion-bg               "#282a36" # Background
+set completion-fg               "#f8f8f2" # Foreground
+set completion-group-bg         "#282a36" # Background
+set completion-group-fg         "#f8f8f2" # Foreground
+set completion-highlight-bg     "#6272a4" # Comment
+set completion-highlight-fg     "#f8f8f2" # Foreground
+
+set index-bg                    "#282a36" # Background
+set index-fg                    "#f8f8f2" # Foreground
+set index-active-bg             "#6272a4" # Comment
+set index-active-fg             "#f8f8f2" # Foreground
+
+set inputbar-bg                 "#282a36" # Background
+set inputbar-fg                 "#50fa7b" # Green
+set statusbar-bg                "#282a36" # Background
+set statusbar-fg                "#f8f8f2" # Foreground
+
+set highlight-color             "#44475a" # selection
+set highlight-active-color      "#6272a4" # Comment
+
+set default-bg                  "#282a36" # Background
+set default-fg                  "#f8f8f2" # Foreground
+
+
+set render-loading              true
+set render-loading-fg           "#282a36" # Background
+set render-loading-bg           "#f8f8f2" # Foreground
+
+# Recolor mode settings
+#
+set recolor true
+set recolor-keephue false
+set recolor-reverse-video false
+#set recolor-lightcolor          "#1c1b19"
+#set recolor-darkcolor           "#fce8c3"
+set recolor-lightcolor          "#282a36" # Background
+set recolor-darkcolor           "#f8f8f2" # Foreground

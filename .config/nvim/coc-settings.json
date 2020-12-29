@@ -1,0 +1,29 @@
+{
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "javascriptreact",
+    "typescript.tsx",
+    "python",
+    "markdown",
+    "vue",
+    "css",
+    "scss",
+    "html",
+    "go"
+  ],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript.tsx",
+    "vue"
+  ],
+  "coc.preferences.diagnostic.virtualText": true
+}
